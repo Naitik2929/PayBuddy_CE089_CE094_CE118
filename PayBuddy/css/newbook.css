@@ -20,20 +20,22 @@ body {
   font-size: 35px;
   padding-top: 10px;
   padding-left: 20px;
+
+  height: 37%;
 }
-span {
+.p-2 span {
   font-size: 25px;
+  margin-left: -55px;
 }
 .pos {
-  margin-top: 230px;
-  margin-left: 68vh;
-  width: 25%;
+  margin: 0 auto;
+  display: block;
+}
+.p-2 {
+  margin: 0 auto;
+  display: block;
 }
 .save {
-  margin-top: 17px;
-  float: right;
-  display: flex;
-  height: 40px;
   width: 100px;
   align-items: center;
   justify-content: center;
@@ -56,6 +58,7 @@ input {
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 .b_name {
+  /* display: flex; */
   margin-top: 15px;
   border-color: rgb(238 238 238 / var(--tw-border-opacity));
   padding: 0px;
