@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/newbook.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>PayBuddy</title>
 </head>
 
@@ -15,10 +16,10 @@
             <h1>PayBuddy</h1>
         </span>
         <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
-            <div class="pos">
-                <span style="color:white">Book name</span><br>
-                <input type="text" name="name" id="name" class="b_name" placeholder="e.g. Daily Expense">
-                <input type="submit" value="Save" class="save">
+            <div class="d-flex align-items-end flex-column" style="height: 200px;">
+                <div class="p-2"><span style="color:white">Book name</span></div>
+                <div class="p-2"><input type="text" name="name" id="name" class="b_name" placeholder="e.g. Daily Expense"></div>
+                <div class="s mt-auto p-2 "><input type="submit" value="Save" class="save"></div>
             </div>
         </form>
 
