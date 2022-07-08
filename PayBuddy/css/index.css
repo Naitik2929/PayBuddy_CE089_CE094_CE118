@@ -7,27 +7,37 @@
 
 body {
   font-family: "Exo", sans-serif;
+  height: 100vh;
 }
 
-.context {
-  
-  position: absolute;
-  top: 10px;
-  left: 20px;
+.main-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  top: 50%;
+  position: relative;
+  transform: translateY(-75%);
 }
 
+.moto-2{
+  margin-bottom: 24px;
+}
 
-.context h1 {
-  
+.context h1 {  
   color: #EDE6DB;
   font-size: 35px;
+  padding: 16px;
 }
 
 .area {
+  position: fixed;
+  top: 0;
+  left: 0;
   background: #1d5c63;
   background: -webkit-linear-gradient(to left, #417d7a, #1d5c63);
   width: 100%;
   height: 100vh;
+  z-index: -1;
 }
 
 .circles {
@@ -139,20 +149,12 @@ body {
   }
 }
 
-.get-started {
-  position: absolute;
-  top: 65vh;
-  right: 78vh;
-
-  
-}
-
 a:link,
 a:visited {
   background-color: #EDE6DB;
   color: #1A3C40;
   padding: 14px 25px;
-  text-align: center;
+  text-align: center; 
   text-decoration: none;
   display: inline-block;
 }
@@ -168,23 +170,9 @@ a:hover
   padding-top: 10px;
 }
 
-.moto-1
-{
-  position: absolute;
-  top: 43vh;
-  left: 530px;
-}
-
 .moto-1 h1{
   font-size: 45px;
   color: #EDE6DB;
-}
-
-.moto-2
-{
-  position: absolute;
-  top: 52vh;
-  left: 618px;
 }
 
 .moto-2 h2{
@@ -192,30 +180,15 @@ a:hover
   color: #EDE6DB;
 }
 
-@media screen and (max-width: 450px){
-  div.moto-1 h1{
-    font-size: 25px;
-    
-  }
-  div.moto-1{
-    left: 55px;
-    top:  25vh;
-  }
-   
-  div.moto-2 h2{
-    font-size: 22px;
-  }
-  div.moto-2 {
-    left: 95px;
-    top: 30vh;
-  }
-  
-  div.get-started {
-    top: 300px;
-    right: 15vh;
-  }
-
+.get-started{
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
-.sign{
-  padding-left: 10px;
+
+.btns{
+  flex-grow: 1;
+  display: block;
+  margin: 20px;
 }
