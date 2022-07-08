@@ -5,19 +5,10 @@
   padding: 0px;
 }
 
-.login-div{
-  margin-top: 70px;
-  
-}
-.context {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-}
-
 .context h1 {
   color: #ede6db;
   font-size: 35px;
+  padding: 24px;
 }
 body {
   font-family: "Exo", sans-serif;
@@ -27,60 +18,21 @@ body {
 }
 .login-content {
   display: flex;
-  flex-direction: column;
   background-color: #1B2021;
-  
-    
-    min-height: 80vh;
-      
-      padding: 60px 68px 40px ;
-      padding-bottom: 0;
-      margin-bottom: 0px;
-  
- 
+  padding: 48px;
+  justify-content:center ;
+  max-width: 400px;
+  margin: 0 auto;
 }
+
 .login-content h1{
   color: azure;
 }
-@media only screen and (min-width: 740px) {
-  .login-body{
-    margin: 0 auto -236px;
-    padding: 0 5%;
-    height: 50%;
-    background-color: transparent;
-    max-width: 450px;
-  }
+
+form > div {
+  padding-top: 10px;
 }
 
-.login-body {
-  padding: 0 0;
-  height: 100%;
-    background-color: transparent;
-    
-
-}
-.login-body ::before{
-  content: "";
-    height: 100%;
-    display: block;
-}
-@media only screen and (min-width: 740px) {
-  .login-body:before {
-    content: "";
-    height: 100%;
-    display: block;
-  }
-}
-@media only screen and (min-width: 740px){
-.login-content {
-  display: flex;
-  min-height: 80vh;
-    
-    padding: 60px 68px 40px ;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
-}
 .hybrid-login-form .hybrid-login-form-main {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -101,16 +53,6 @@ body {
   padding-bottom: 0px;
   max-width: 100%;
 }
-@media only screen and (min-width: 740px) {
-    .nfemailcontrol ,.nfpasswordcontrol,.nffnamecontrol,.nflnamecontrol,.nfphonecontrol{
-
-       border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-  }  
-}
-
 .nfemailcontrol ,.nfpasswordcontrol,.nffnamecontrol,.nflnamecontrol,.nfphonecontrol{
   border-radius: 4px;
   display: flex;
@@ -120,8 +62,6 @@ body {
 
 .placelabel{
   color: #fff;
-  
-  
 }
 .btn {
   display: inline-block;
@@ -158,11 +98,9 @@ body {
 }
 
 .btn.btn-small {
-  display: block;
-  width: 50%;
-  padding: 0;
-  margin: 1.5em auto;
-  line-height: 50px;
+  width: fit-content;
+  padding: 20px;
+  margin-top: 16px;
 }
 
 .btn-submit {
@@ -188,13 +126,10 @@ body {
   font-size: 16px;
   height: 20px;
   padding: 10px;
-  width: 265px;
   font-family: 'poppins', sans-serif;
   padding-left: 30px;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
-.hybrid-login-form-main h1{
-  text-align: center;
-}
+
