@@ -41,10 +41,10 @@
                         echo "<td>" . $row['category'] . "</td>";
                         echo "<td>" . $row['amount'] . "</td>";
                         echo "<td>" . $row['payment_mode'] . "</td>";
-                        // echo "<td>";
-                        // // echo "<a href='recent_entry.php?id=" . $row['book_id'] . "'>View entries</a>";
-                        // echo "&nbsp;";
-                        // echo "</td>";
+                        echo '<td class="temp">';
+                        echo "<a href='delete_entry.php?id=" . $row['entry_id'] . "'>Delete entry</a>";
+                        echo "&nbsp;";
+                        echo "</td>";
                         echo "</tr>";
                     }
                     echo "</tbody>";
